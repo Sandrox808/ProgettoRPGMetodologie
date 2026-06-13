@@ -9,5 +9,5 @@
 
   "mosseAttacco" : ["colpo", ""],
   "mosseDifesa"  : ["blocca", ""],
-  "mosseAltro"   : ["scruta", ""]
+  "mosseAltro"   : ["cura", ""]
 }

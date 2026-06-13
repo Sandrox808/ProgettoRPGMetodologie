@@ -41,10 +41,10 @@ Architettura tecnica:
 
 ## Come buildare
 
-Da terminale, nella root del progetto:
+Una volta Clonato il Progetto tramite `git Clone`
 
 ```powershell
-cd C:\Users\Sndrx\Inf\Java\progetto3
+cd ProgettoRPGMetodologie
 ```
 
 Su Windows:

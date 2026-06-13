@@ -1,6 +1,6 @@
 {
   "nome": "Boss",
-  "immagine": "/org/example/chud.png",
+  "immagine": "/org/example/CB.jpg",
   "strategia": "boss",
 
   "hp": 100,
