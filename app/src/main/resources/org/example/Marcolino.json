@@ -1,0 +1,13 @@
+{
+  "nome": "Marcolino",
+  "immagine": "/org/example/ClownCat.jpg",
+  "strategia" : "",
+
+  "hp": 100,
+  "attacco": 20,
+  "stamina": 40,
+
+  "mosseAttacco" : ["colpo", ""],
+  "mosseDifesa"  : ["blocca", ""],
+  "mosseAltro"   : ["scruta", ""]
+}

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controller.ControllerBattaglia"
+            prefWidth="800"
+            prefHeight="500">
+
+   <padding>
+      <Insets top="15" right="15" bottom="15" left="15"/>
+   </padding>
+
+   <!-- SEZIONE ALTA: GIOCATORE VS NPC -->
+   <top>
+      <VBox spacing="10">
+
+         <HBox spacing="40" alignment="CENTER">
+
+            <!-- GIOCATORE -->
+            <VBox spacing="8" alignment="CENTER">
+               <Label fx:id="personaggioGiocanteLabel" text="Giocatore"/>
+
+               <ImageView fx:id="personaggioGiocanteImmagine"
+                          fitWidth="160"
+                          fitHeight="160"
+                          preserveRatio="true"
+                          smooth="true"
+               />
+
+               <Label fx:id="personaggioGiocanteAttaccoLabel" text="Attacco: 0"/>
+               <Label fx:id="personaggioGiocanteHpLabel" text="HP: 0"/>
+               <Label fx:id="personaggioGiocanteStaminaLabel" text="Stamina: 0"/>
+            </VBox>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <!-- NPC -->
+            <VBox spacing="8" alignment="CENTER">
+               <Label fx:id="personaggioNPCLabel" text="NPC"/>
+
+               <ImageView fx:id="personaggioNPCImmagine"
+                          fitWidth="160"
+                          fitHeight="160"
+                          preserveRatio="true"
+                          smooth="true"
+               />
+
+               <Label fx:id="personaggioNpcAttaccoLabel" text="Attacco: 0"/>
+               <Label fx:id="personaggioNPCHpLabel" text="HP: 0"/>
+               <Label fx:id="personaggioNPCStaminaLabel" text="Stamina: 0"/>
+            </VBox>
+
+         </HBox>
+
+         <Region prefHeight="1" style="-fx-background-color: #888888;"/>
+
+      </VBox>
+   </top>
+
+   <!-- SEZIONE CENTRALE: MOSSE -->
+   <center>
+      <GridPane hgap="40"
+                vgap="10"
+                alignment="CENTER">
+
+         <!-- TITOLI -->
+         <Label text="Attacco"
+                GridPane.columnIndex="0"
+                GridPane.rowIndex="0"
+                style="-fx-font-size: 18px;"/>
+
+         <Label text="Difesa"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="0"
+                style="-fx-font-size: 18px;"/>
+
+         <Label text="Altro"
+                GridPane.columnIndex="2"
+                GridPane.rowIndex="0"
+                style="-fx-font-size: 18px;"/>
+
+         <!-- BOTTONI ATTACCO -->
+         <ToggleButton fx:id="bottoneAttacco1"
+                       text="Attacco 1"
+                       prefWidth="130"
+                       prefHeight="40"
+                       GridPane.columnIndex="0"
+                       GridPane.rowIndex="1"/>
+
+         <ToggleButton fx:id="bottoneAttacco2"
+                       text="Attacco 2"
+                       prefWidth="130"
+                       prefHeight="40"
+                       GridPane.columnIndex="0"
+                       GridPane.rowIndex="2"/>
+
+         <!-- BOTTONI DIFESA -->
+         <ToggleButton fx:id="bottoneDifesa1"
+                       text="Difesa 1"
+                       prefWidth="130"
+                       prefHeight="40"
+                       GridPane.columnIndex="1"
+                       GridPane.rowIndex="1"/>
+
+         <ToggleButton fx:id="bottoneDifesa2"
+                       text="Difesa 2"
+                       prefWidth="130"
+                       prefHeight="40"
+                       GridPane.columnIndex="1"
+                       GridPane.rowIndex="2"/>
+
+         <!-- BOTTONI ALTRO -->
+         <ToggleButton fx:id="bottoneAltro1"
+                       text="Altro 1"
+                       prefWidth="130"
+                       prefHeight="40"
+                       GridPane.columnIndex="2"
+                       GridPane.rowIndex="1"/>
+
+         <ToggleButton fx:id="bottoneAltro2"
+                       text="Altro 2"
+                       prefWidth="130"
+                       prefHeight="40"
+                       GridPane.columnIndex="2"
+                       GridPane.rowIndex="2"/>
+
+      </GridPane>
+   </center>
+
+   <!-- SEZIONE BASSA: LOG + NAVIGAZIONE -->
+   <bottom>
+      <VBox spacing="10">
+
+         <Region prefHeight="1" style="-fx-background-color: #888888;"/>
+
+         <TextArea fx:id="LogBattaglia"
+                   editable="false"
+                   wrapText="true"
+                   prefRowCount="4"
+                   text="Log battaglia..."/>
+
+         <HBox spacing="10" alignment="CENTER_RIGHT">
+            <Button fx:id="bottoneIndietro"
+                    text="Indietro"
+                    prefWidth="90"/>
+
+            <Button fx:id="bottoneAvanti"
+                    text="Avanti"
+                    prefWidth="90"/>
+         </HBox>
+
+      </VBox>
+   </bottom>
+
+</BorderPane>

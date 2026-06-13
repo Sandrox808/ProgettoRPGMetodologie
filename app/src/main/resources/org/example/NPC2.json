@@ -1,0 +1,13 @@
+{
+  "nome": "Gambler",
+  "immagine": "/org/example/chud.png",
+  "strategia": "base",
+
+  "hp": 60,
+  "attacco": 20,
+  "stamina": 50,
+
+  "mosseAttacco" : ["colpo", ""],
+  "mosseDifesa"  : ["blocca", ""],
+  "mosseAltro"   : ["dilly_dally", ""]
+}

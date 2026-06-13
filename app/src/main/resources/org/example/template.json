@@ -1,0 +1,14 @@
+{
+  "nome": "Template",
+  "immagine": "/org/example/{immagine}",
+  "strategia": "base",
+
+
+  "hp": 10,
+  "attacco": 10,
+  "stamina": 10,
+
+  "mosseAttacco" : ["", ""],
+  "mosseDifesa"  : ["", ""],
+  "mosseAltro"   : ["", ""]
+}

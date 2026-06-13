@@ -1,0 +1,13 @@
+{
+  "nome": "Boss",
+  "immagine": "/org/example/chud.png",
+  "strategia": "boss",
+
+  "hp": 100,
+  "attacco": 15,
+  "stamina": 80,
+
+  "mosseAttacco" : ["colpo", "colpo_pesante"],
+  "mosseDifesa"  : ["blocca", ""],
+  "mosseAltro"   : ["dilly_dally", ""]
+}
